@@ -1,5 +1,7 @@
 # supra-orchestrator
 
+[![tests](https://github.com/decentralizeallengineering/supra-orchestrator/actions/workflows/tests.yml/badge.svg)](https://github.com/decentralizeallengineering/supra-orchestrator/actions/workflows/tests.yml) ![license](https://img.shields.io/badge/license-Apache--2.0-blue)
+
 Templates and a small standard-library CLI for running a fleet of Claude Code sessions with a clear chain of command: the person (principal), a proxy session that acts for them, a governor session that splits the work, and worker sessions that do it.
 
 Why: long-running fleets drift. Orders get paraphrased, workers report "done" for things the person cannot see working, and peers cite the person's wishes without proof. This keeps one ledger of the person's exact words, one short state file, and one append-only facts file.
