@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supra-orchestrator"
+version = "0.1.0"
+description = "Principal-proxy-governor-worker templates and a stdlib CLI for fleets of Claude Code sessions"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+
+[project.scripts]
+supra = "supra.cli:main"
+
+[tool.setuptools]
+packages = ["supra"]
+
+[tool.setuptools.package-data]
+supra = ["templates/*"]
